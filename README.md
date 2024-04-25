@@ -1,14 +1,13 @@
-# vue-template
-a clean template for your vue projects, featuring tailwindcss and a pages directory
+# midi-message-reader
+this "simple" website helps you translate MIDI messages in hexadecimal to something humans can easily understand.
 
-## does this even need a readme?
-that's pretty much it, a simple vue template, featuring tailwindcss and vite-plugin-pages
+available @ [midi.pnxl.dev](https://midi.pnxl.dev/)
 
-### tailwindcss
-tailwindcss handles your styling and works alongside postcss, recommended to use tailwindcss intellisense and prettier
+## screenshots
+![image](https://github.com/pnxl/midi-message-reader/assets/66474423/60a2cb30-2e37-42a5-97cb-f57d83c77247)
+![image](https://github.com/pnxl/midi-message-reader/assets/66474423/0310cec6-0662-4fc1-bfe3-8e621d9f5626)
 
-### vite-plugin-pages
-handles all routing in the `/pages` directory, so you don't have to. say goodbye to manual routing!
+## known issues
 
 ## recommended ide setup:
 ### visual studio code
