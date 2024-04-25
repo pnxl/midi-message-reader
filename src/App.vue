@@ -229,27 +229,34 @@
                   data1 == 45
                 "
               >
-                {{ cc[parseInt(data1, 16)].use }} Value
-                {{ parseInt(data2, 16) }} (<span
+                <span v-if="cc[parseInt(data1, 16)].use">{{
+                  cc[parseInt(data1, 16)].use
+                }}</span>
+                Value {{ parseInt(data2, 16) }} (<span
                   v-if="parseInt(data2, 16) <= 63"
                   >Off</span
                 ><span v-else-if="parseInt(data2, 16) >= 64">On</span>)
               </p>
               <p v-else-if="data1 == 44">
-                {{ cc[parseInt(data1, 16)].use }} Value
-                {{ parseInt(data2, 16) }} (<span
+                <span v-if="cc[parseInt(data1, 16)].use">{{
+                  cc[parseInt(data1, 16)].use
+                }}</span>
+                Value {{ parseInt(data2, 16) }} (<span
                   v-if="parseInt(data2, 16) <= 63"
                   >Normal</span
                 ><span v-else-if="parseInt(data2, 16) >= 64">Legato</span>)
               </p>
               <p v-else-if="data1.toLowerCase() == '7a'">
-                {{ cc[parseInt(data1, 16)].use }} Value
+                <span v-if="cc[parseInt(data1, 16)].use">{{
+                  cc[parseInt(data1, 16)].use
+                }}</span>
+                Value
                 {{ parseInt(data2, 16) }}
                 <span v-if="parseInt(data2, 16) === 0">(Off)</span
                 ><span v-else-if="parseInt(data2, 16) === 127">(On)</span>
               </p>
               <p v-else>
-                <span>
+                <span v-if="cc[parseInt(data1, 16)].use">
                   <span v-if="cc[parseInt(data1, 16)].use !== null">{{
                     cc[parseInt(data1, 16)].use
                   }}</span>
