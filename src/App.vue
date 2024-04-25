@@ -159,10 +159,12 @@
           </div>
           <div v-else-if="status.slice(0, 1).toLowerCase() === 'b'">
             <p v-if="data1">
-              <span v-if="cc[parseInt(data1, 16)].func === null"
-                >Undefined
+              <span v-if="cc[parseInt(data1, 16)].func">
+                <span v-if="cc[parseInt(data1, 16)].func === null"
+                  >Undefined
+                </span>
+                <span v-else>{{ cc[parseInt(data1, 16)].func }}</span>
               </span>
-              <span v-else>{{ cc[parseInt(data1, 16)].func }}</span>
             </p>
           </div>
           <div v-else-if="status.slice(0, 1).toLowerCase() === 'c'">
